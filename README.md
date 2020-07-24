@@ -1,2 +1,3 @@
 # highskillmasters-web
-High Skill Masters web app
+
+High Skill Masters web app.
