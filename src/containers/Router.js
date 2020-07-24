@@ -5,6 +5,7 @@ import Home from '../pages/home'
 import About from '../pages/about'
 import Events from '../pages/events'
 import Members from '../pages/members'
+import Debug from '../pages/debug'
 
 const Router = () => {
   return (
@@ -21,6 +22,9 @@ const Router = () => {
         </Route>
         <Route path="/members">
           <Members />
+        </Route>
+        <Route path="/debug">
+          <Debug />
         </Route>
       </Switch>
     </BrowserRouter>
