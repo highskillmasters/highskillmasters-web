@@ -1,0 +1,64 @@
+[
+  {
+    "name": "M Haidar Hanif",
+    "role": "Founder and Organizer",
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://mhaidarhanif.com"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/mhaidarh"
+      }
+    ]
+  },
+  {
+    "name": "Maya Asmara",
+    "role": "Co-Founder and Co-Organizer",
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://mayaasmara.com"
+      }
+    ]
+  },
+  {
+    "name": "Rahman Fadhil",
+    "role": "Co-Organizer",
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://rahmanfadhil.com"
+      }
+    ]
+  },
+  {
+    "name": "Khasbullah Nukman Zakin",
+    "role": "Co-Organizer",
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://zakintaliban.netlify.com"
+      }
+    ]
+  },
+  {
+    "name": "Ahmad Marzuki",
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://ahmadmarzuki.com"
+      }
+    ]
+  },
+  {
+    "name": "Jonathan Nicolas",
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://jonathannicolas.dev"
+      }
+    ]
+  }
+]
