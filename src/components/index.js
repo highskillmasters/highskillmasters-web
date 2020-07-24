@@ -7,6 +7,8 @@ import Hero from './Hero'
 import MemberCard from './MemberCard'
 import Navigation from './Navigation'
 import Page from './Page'
+import SectionCenter from './SectionCenter'
+import SubscribeForm from './SubscribeForm'
 
 export {
   Anchor,
@@ -18,4 +20,6 @@ export {
   MemberCard,
   Navigation,
   Page,
+  SectionCenter,
+  SubscribeForm,
 }

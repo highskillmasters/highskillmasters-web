@@ -2,6 +2,7 @@
   {
     "name": "M Haidar Hanif",
     "role": "Founder and Organizer",
+    "profession": "Educator, engineer, designer, trainer, mentor.",
     "links": [
       {
         "title": "Website",
@@ -16,6 +17,7 @@
   {
     "name": "Maya Asmara",
     "role": "Co-Founder and Co-Organizer",
+    "profession": "Writer, designer, counsellor.",
     "links": [
       {
         "title": "Website",
@@ -26,6 +28,7 @@
   {
     "name": "Rahman Fadhil",
     "role": "Co-Organizer",
+    "profession": "Engineer, developer, programmer.",
     "links": [
       {
         "title": "Website",
@@ -40,6 +43,7 @@
   {
     "name": "Khasbullah Nukman Zakin",
     "role": "Co-Organizer",
+    "profession": "Engineer, developer, programmer.",
     "links": [
       {
         "title": "Website",
@@ -48,7 +52,18 @@
     ]
   },
   {
+    "name": "Patrisia Kusumaningrum",
+    "profession": "Researcher.",
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://www.researchgate.net/profile/Patrisia_Kusumaningrum"
+      }
+    ]
+  },
+  {
     "name": "Ahmad Marzuki",
+    "profession": "Engineer, developer, programmer.",
     "links": [
       {
         "title": "Website",
@@ -57,7 +72,18 @@
     ]
   },
   {
+    "name": "Juliana Kwok",
+    "profession": "Entrepreneur.",
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://winngie.com"
+      }
+    ]
+  },
+  {
     "name": "Jonathan Nicolas",
+    "profession": "Engineer, developer, programmer, artist.",
     "links": [
       {
         "title": "Website",

@@ -18,7 +18,7 @@ const Footer = () => {
     <FooterContainer>
       <p>Copyright 2020 High Skill Masters</p>
       <p>
-        <small>This site is still in under heavy development</small>
+        <small>This platform is still in under heavy development</small>
       </p>
     </FooterContainer>
   )

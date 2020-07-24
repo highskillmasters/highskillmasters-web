@@ -13,6 +13,10 @@ const HeroImage = styled.img`
   margin: 50px;
 `
 
+const HeroText = styled.p`
+  text-align: center;
+`
+
 const Hero = () => {
   return (
     <HeroContainer>
@@ -20,10 +24,10 @@ const Hero = () => {
         src="/assets/logos/logo-compact.svg"
         alt="High Skill Masters logo"
       />
-      <p>
+      <HeroText>
         High Skill Masters is a global community for highly skilled
         professionals in several countries that aimed to be connected worldwide.
-      </p>
+      </HeroText>
     </HeroContainer>
   )
 }

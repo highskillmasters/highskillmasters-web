@@ -16,6 +16,10 @@ const NavigationIcon = styled.div`
   img {
     width: 30px;
   }
+
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
 `
 
 const NavigationList = styled.ul`
