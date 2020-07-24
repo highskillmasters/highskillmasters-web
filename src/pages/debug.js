@@ -10,7 +10,13 @@ const Debug = () => {
   const [subscriber, setSubsriber] = useState(defaultSubscriber)
 
   const requestData = async () => {
-    const response = await axios.get(process.env.REACT_APP_API_URL)
+    const response = await axios.post(
+      `${process.env.REACT_APP_API_URL}/subscribe`,
+      {
+        email: 'newmember@example.com',
+      }
+    )
+
     setSubsriber(response.data)
   }
 

@@ -155,16 +155,6 @@ th {
   border-bottom: 1px solid #c7e3be;
 }
 
-/* Buttons, forms and input */
-input,
-textarea {
-  border: 1px solid #4a4a4a;
-}
-input:focus,
-textarea:focus {
-  border: 1px solid #27ae60;
-}
-
 textarea {
   width: 100%;
 }
