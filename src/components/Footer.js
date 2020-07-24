@@ -3,7 +3,8 @@ import styled from '@xstyled/emotion'
 
 const FooterContainer = styled.footer`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin: 50px 0;
   p {
     font-size: 0.8em;
@@ -16,6 +17,9 @@ const Footer = () => {
   return (
     <FooterContainer>
       <p>Copyright 2020 High Skill Masters</p>
+      <p>
+        <small>This site is still in under heavy development</small>
+      </p>
     </FooterContainer>
   )
 }

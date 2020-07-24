@@ -11,7 +11,7 @@ const Events = () => {
   return (
     <Page heading="Events">
       <EventList>
-        {events.map((event, index) => {
+        {events.reverse().map((event, index) => {
           return <EventCard key={index} event={event} />
         })}
       </EventList>

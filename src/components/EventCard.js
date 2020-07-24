@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from '@xstyled/emotion'
+import renderHTML from 'react-render-html'
 
 import { AnchorButton } from '../components'
 
@@ -34,7 +35,7 @@ const EventCard = ({ event }) => {
       <p>
         <AnchorButton href={event.url}>Join Event</AnchorButton>
       </p>
-      <p>{event.description}</p>
+      <p>{renderHTML(event.description)}</p>
     </EventCardContainer>
   )
 }
