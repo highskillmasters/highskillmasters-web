@@ -1,11 +1,20 @@
 import React from 'react'
+import styled from '@xstyled/emotion'
 
-import Page from '../containers/Page'
+import { Page, MemberCard } from '../components'
+
+import members from '../data/members.json'
+
+const MemberList = styled.section``
 
 const Members = () => {
   return (
-    <Page>
-      <h1>Members</h1>
+    <Page heading="Members">
+      <MemberList>
+        {members.map((member, index) => {
+          return <MemberCard key={index} member={member} />
+        })}
+      </MemberList>
     </Page>
   )
 }
