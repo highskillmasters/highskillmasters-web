@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from '@xstyled/emotion'
 
+import { Anchor } from '../components'
+
 const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
@@ -18,7 +20,11 @@ const Footer = () => {
     <FooterContainer>
       <p>Copyright 2020 High Skill Masters</p>
       <p>
-        <small>This platform is still in under heavy development</small>
+        <small>
+          <Anchor href="https://github.com/highskillmasters">
+            This platform is still in under heavy development
+          </Anchor>
+        </small>
       </p>
     </FooterContainer>
   )
