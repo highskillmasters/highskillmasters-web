@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "PORT=8000 react-scripts start",
     "start": "PORT=8000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -32,6 +33,7 @@
     "@testing-library/user-event": "^7.1.2",
     "@xstyled/emotion": "1.17.2",
     "emotion-theming": "10.0.27",
+    "query-string": "6.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-render-html": "0.6.0",
