@@ -15,16 +15,16 @@ const ImportantText = styled.span`
 
 const Subscribed = (props) => {
   const search = queryString.parse(props.location.search)
+  const email = search.email.replace(/ /g, '+')
 
   return (
     <Page heading="Email Subscribed">
-      {!search.email ? (
+      {!email ? (
         <Redirect to="/" />
       ) : (
         <SubscribedContainer>
           <p>
-            Your email <ImportantText>{search.email}</ImportantText> is now
-            subscribed.
+            Your email <ImportantText>{email}</ImportantText> is now subscribed.
           </p>
           <p>
             Please confirm by clicking the link in the verification email, it

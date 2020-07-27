@@ -16,16 +16,21 @@ const ImportantText = styled.span`
 
 const Subscribed = (props) => {
   const search = queryString.parse(props.location.search)
+  const email = search.email.replace(/ /g, '+')
+  const code = search.code
+
   const [isLoading, setIsLoading] = useState(true)
   const [isVerified, setIsVerified] = useState(false)
 
   useEffect(() => {
     const verifyMemberEmail = async () => {
       setIsLoading(false)
-      console.log(search.email)
       try {
+        console.log(
+          `${process.env.REACT_APP_API_URL}/members/verify?email=${email}&code=${code}`
+        )
         await axios.get(
-          `${process.env.REACT_APP_API_URL}/members/verify?email=${search.email}&code=${search.code}`
+          `${process.env.REACT_APP_API_URL}/members/verify?email=${email}&code=${code}`
         )
         setIsVerified(true)
       } catch (error) {
@@ -33,7 +38,7 @@ const Subscribed = (props) => {
       }
     }
     if (isLoading) verifyMemberEmail()
-  }, [isLoading, isVerified, search])
+  }, [isLoading, isVerified, email, code])
 
   return (
     <Page heading={!isVerified ? 'Verify Email Failed' : 'Email Verified'}>
@@ -51,8 +56,8 @@ const Subscribed = (props) => {
       ) : (
         <VerifyContainer>
           <p>
-            Congratulations! Your email{' '}
-            <ImportantText>{search.email}</ImportantText> is now verified.
+            Congratulations! Your email <ImportantText>{email}</ImportantText>{' '}
+            is now verified.
           </p>
           <p>You should also receive the confirmation email:</p>
           <img
