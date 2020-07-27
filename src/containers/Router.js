@@ -5,6 +5,8 @@ import Home from '../pages/home'
 import About from '../pages/about'
 import Events from '../pages/events'
 import Members from '../pages/members'
+import Subscribed from '../pages/subscribed'
+import Verify from '../pages/verify'
 import Debug from '../pages/debug'
 
 const Router = () => {
@@ -22,6 +24,12 @@ const Router = () => {
         </Route>
         <Route path="/members">
           <Members />
+        </Route>
+        <Route path="/subscribed">
+          <Subscribed />
+        </Route>
+        <Route path="/verify">
+          <Verify />
         </Route>
         <Route path="/debug">
           <Debug />
