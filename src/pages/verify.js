@@ -26,9 +26,6 @@ const Subscribed = (props) => {
     const verifyMemberEmail = async () => {
       setIsLoading(false)
       try {
-        console.log(
-          `${process.env.REACT_APP_API_URL}/members/verify?email=${email}&code=${code}`
-        )
         await axios.get(
           `${process.env.REACT_APP_API_URL}/members/verify?email=${email}&code=${code}`
         )
@@ -52,6 +49,12 @@ const Subscribed = (props) => {
             Your email or verification code are invalid. You also might already
             verified.
           </p>
+          <p>The confirmation email looks like this:</p>
+          <img
+            src="/assets/images/preview-email-verified.png"
+            alt="Email Verified Preview"
+          />
+          <p>Thank you!</p>
         </VerifyContainer>
       ) : (
         <VerifyContainer>
