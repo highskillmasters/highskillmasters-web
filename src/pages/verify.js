@@ -1,12 +1,13 @@
-import React from 'react'
-import { withRouter, Redirect } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import styled from '@xstyled/emotion'
 import queryString from 'query-string'
+import axios from 'redaxios'
 
 import { Page } from '../components'
 
-const SubscribedContainer = styled.section``
+const VerifyContainer = styled.section``
 
 const ImportantText = styled.span`
   font-weight: 600;
@@ -15,13 +16,40 @@ const ImportantText = styled.span`
 
 const Subscribed = (props) => {
   const search = queryString.parse(props.location.search)
+  const [isLoading, setIsLoading] = useState(true)
+  const [isVerified, setIsVerified] = useState(false)
+
+  useEffect(() => {
+    const verifyMemberEmail = async () => {
+      setIsLoading(false)
+      console.log(search.email)
+      try {
+        await axios.get(
+          `${process.env.REACT_APP_API_URL}/members/verify?email=${search.email}&code=${search.code}`
+        )
+        setIsVerified(true)
+      } catch (error) {
+        setIsVerified(false)
+      }
+    }
+    if (isLoading) verifyMemberEmail()
+  }, [isLoading, isVerified, search])
 
   return (
-    <Page heading="Email Verified">
-      {!search.email && !search.code ? (
-        <Redirect to="/" />
+    <Page heading={!isVerified ? 'Verify Email Failed' : 'Email Verified'}>
+      {isLoading && !isVerified ? (
+        <VerifyContainer>
+          <p>Verifying your email...</p>
+        </VerifyContainer>
+      ) : !isLoading && !isVerified ? (
+        <VerifyContainer>
+          <p>
+            Your email or verification code are invalid. You also might already
+            verified.
+          </p>
+        </VerifyContainer>
       ) : (
-        <SubscribedContainer>
+        <VerifyContainer>
           <p>
             Congratulations! Your email{' '}
             <ImportantText>{search.email}</ImportantText> is now verified.
@@ -32,7 +60,7 @@ const Subscribed = (props) => {
             alt="Email Verified Preview"
           />
           <p>Thank you!</p>
-        </SubscribedContainer>
+        </VerifyContainer>
       )}
     </Page>
   )
