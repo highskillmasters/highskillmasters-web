@@ -2,6 +2,7 @@ import React from 'react'
 import styled from '@xstyled/emotion'
 
 import { Anchor } from '../components'
+import socials from '../data/socials.json'
 
 const FooterContainer = styled.footer`
   display: flex;
@@ -15,9 +16,34 @@ const FooterContainer = styled.footer`
   }
 `
 
+const SocialList = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+`
+
+const SocialItem = styled.li`
+  margin: 0 10px;
+  img {
+    height: 30px;
+  }
+`
+
 const Footer = () => {
   return (
     <FooterContainer>
+      <SocialList>
+        {socials.map(({ name, url, iconUrl }, index) => {
+          return (
+            <SocialItem key={index}>
+              <Anchor href={url}>
+                <img src={iconUrl} alt={name} />
+              </Anchor>
+            </SocialItem>
+          )
+        })}
+      </SocialList>
+
       <p>Copyright 2020 High Skill Masters</p>
       <p>
         <small>
