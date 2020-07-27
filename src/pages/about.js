@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@xstyled/emotion'
 
-import { Page } from '../components'
+import { Page, Anchor } from '../components'
 
 const ProfessionList = styled.ul`
   columns: 2;
@@ -52,6 +52,24 @@ const About = () => {
         <li>investors</li>
         <li>your fancy professions!</li>
       </ProfessionList>
+      <p>Previously we were on Meetup.com groups:</p>
+      <ul>
+        <li>
+          <Anchor href="https://meetup.com/highskillmasters-indonesia">
+            Indonesia
+          </Anchor>
+        </li>
+        <li>
+          <Anchor href="https://meetup.com/highskillmasters-malaysia">
+            Malaysia
+          </Anchor>
+        </li>
+        <li>
+          <Anchor href="https://meetup.com/highskillmasters-singapore">
+            Singapore
+          </Anchor>
+        </li>
+      </ul>
     </Page>
   )
 }
