@@ -35,7 +35,7 @@ const EventCard = ({ event }) => {
       <p>
         <AnchorButton href={event.url}>Join Event</AnchorButton>
       </p>
-      <p>{renderHTML(event.description)}</p>
+      {renderHTML(event.description)}
     </EventCardContainer>
   )
 }
