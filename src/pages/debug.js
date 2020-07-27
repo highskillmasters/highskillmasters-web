@@ -1,27 +1,28 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import { withRouter } from 'react-router-dom'
 import axios from 'redaxios'
+import queryString from 'query-string'
 
 import { Page } from '../components'
 
-const Debug = () => {
-  const defaultSubscriber = {
-    email: 'name@example.com',
-  }
-  const [subscriber, setSubsriber] = useState(defaultSubscriber)
+const Debug = (props) => {
+  const search = queryString.parse(props.location.search)
+  const [data, setData] = useState({})
 
   const requestData = async () => {
-    const response = await axios.post(
-      `${process.env.REACT_APP_API_URL}/subscribe`,
-      {
-        email: 'newmember@example.com',
-      }
-    )
-
-    setSubsriber(response.data)
+    try {
+      const response = await axios.get(
+        `${process.env.REACT_APP_API_URL}/members?api_key=${search.api_key}`
+      )
+      setData(response.data)
+    } catch (error) {
+      setData(error)
+    }
   }
 
   const resetData = () => {
-    setSubsriber(defaultSubscriber)
+    setData({})
   }
 
   return (
@@ -29,9 +30,13 @@ const Debug = () => {
       <h2>Debug Page</h2>
       <button onClick={requestData}>Send Request</button>
       <button onClick={resetData}>Reset Data</button>
-      <pre>{JSON.stringify(subscriber, null, 2)}</pre>
+      <pre>{JSON.stringify(data, null, 2)}</pre>
     </Page>
   )
 }
 
-export default Debug
+Debug.propTypes = {
+  location: PropTypes.object,
+}
+
+export default withRouter(Debug)
