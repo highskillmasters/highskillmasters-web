@@ -1,6 +1,6 @@
 import React from 'react'
-import { withRouter, Redirect } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import { withRouter, Redirect } from 'react-router-dom'
 import styled from '@xstyled/emotion'
 import queryString from 'query-string'
 
@@ -18,24 +18,25 @@ const Subscribed = (props) => {
 
   return (
     <Page heading="Email Subscribed">
-      {search.email === '' ? (
+      {!search.email ? (
         <Redirect to="/" />
       ) : (
         <SubscribedContainer>
           <p>
             Your email <ImportantText>{search.email}</ImportantText> is now
-            subscribed. Please check the verification email in the inbox.
+            subscribed.
           </p>
-          <p>It should look like this:</p>
+          <p>
+            Please confirm by clicking the link in the verification email, it
+            should look like this:
+          </p>
           <img
             src="/assets/images/preview-email-verification.png"
             alt="Email Verification Preview"
           />
-          <p>After you clicked the link, you will get a confirmation email:</p>
-          <img
-            src="/assets/images/preview-email-verified.png"
-            alt="Email Verified Preview"
-          />
+          <p>
+            We have to verify before sending other information emails to you.
+          </p>
           <p>Thank you!</p>
         </SubscribedContainer>
       )}
