@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { withRouter } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import axios from 'redaxios'
 import styled from '@xstyled/emotion'
 
@@ -33,7 +35,7 @@ const SubmitButton = styled.input`
   }
 `
 
-const SubscribeForm = () => {
+const SubscribeForm = (props) => {
   const defaultMember = {
     email: '',
   }
@@ -53,11 +55,19 @@ const SubscribeForm = () => {
 
     if (member.email !== '') {
       try {
-        await axios.post(`${process.env.REACT_APP_API_URL}/subscribe`, member)
+        await axios.post(
+          `${process.env.REACT_APP_API_URL}/members/subscribe`,
+          member
+        )
         setMessage(`${member.email} is successfully subscribed!`)
         setMember({ email: '' })
+        props.history.push(`/subscribed?email=${member.email}`)
       } catch (error) {
-        setMessage('Sorry, something went wrong. Please try again.')
+        if (error.status === 409) {
+          setMessage(`${member.email} is already subscribed`)
+        } else {
+          setMessage('Sorry, something went wrong. Please try again.')
+        }
       }
     } else {
       setMessage('Please enter your email first.')
@@ -81,4 +91,8 @@ const SubscribeForm = () => {
   )
 }
 
-export default SubscribeForm
+SubscribeForm.propTypes = {
+  history: PropTypes.object,
+}
+
+export default withRouter(SubscribeForm)

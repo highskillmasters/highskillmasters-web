@@ -37,6 +37,10 @@ const Subscribed = (props) => {
           <p>
             We have to verify before sending other information emails to you.
           </p>
+          <p>
+            If you have not receive the email, please wait for several seconds
+            for it to arrive.
+          </p>
           <p>Thank you!</p>
         </SubscribedContainer>
       )}
