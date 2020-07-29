@@ -8,7 +8,7 @@ const Home = () => {
       <Hero />
 
       <SectionCenter>
-        <h3>Subscribe for Event Updates:</h3>
+        <h6>Subscribe for Event Updates:</h6>
         <SubscribeForm></SubscribeForm>
       </SectionCenter>
     </Page>

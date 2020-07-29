@@ -5,7 +5,13 @@ import { Page, MemberCard } from '../components'
 
 import members from '../data/members.json'
 
-const MemberList = styled.section``
+const MemberList = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    flex: 1 1 30%;
+  }
+`
 
 const Members = () => {
   return (
