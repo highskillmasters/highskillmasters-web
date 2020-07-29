@@ -1,5 +1,6 @@
 import Anchor from './Anchor'
 import AnchorButton from './AnchorButton'
+import Card from './Card'
 import EventCard from './EventCard'
 import Footer from './Footer'
 import Heading from './Heading'
@@ -13,6 +14,7 @@ import SubscribeForm from './SubscribeForm'
 export {
   Anchor,
   AnchorButton,
+  Card,
   EventCard,
   Footer,
   Heading,
