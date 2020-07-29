@@ -41,7 +41,7 @@
     ]
   },
   {
-    "name": "Khasbullah Nukman Zakin",
+    "name": "Hasbi Nukman Zakin",
     "role": "Co-Organizer",
     "profession": "Engineer, developer, programmer.",
     "links": [
@@ -88,6 +88,36 @@
       {
         "title": "Website",
         "url": "https://jonathannicolas.dev"
+      }
+    ]
+  },
+  {
+    "name": "Ekky Pramana",
+    "profession": "Designer, writer, content creator",
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://vektoria.id"
+      }
+    ]
+  },
+  {
+    "name": "Kenneth Mahakim",
+    "profession": "Designer, illustrator, content creator",
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://vektoria.id"
+      }
+    ]
+  },
+  {
+    "name": "Mekaputra Yudahandika",
+    "profession": "Creativepreneur, manager, product creator",
+    "links": [
+      {
+        "title": "Website",
+        "url": "https://linkedin.com/in/mekaputra"
       }
     ]
   }
