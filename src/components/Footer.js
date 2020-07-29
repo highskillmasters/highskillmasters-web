@@ -8,7 +8,8 @@ const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px 0;
+  margin-top: 100px;
+  margin-bottom: 20px;
   p {
     font-size: 0.8em;
     color: #aaa;

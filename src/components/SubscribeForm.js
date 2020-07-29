@@ -16,9 +16,12 @@ const FieldSet = styled.div`
 const InputField = styled.input`
   font-size: 1em;
   padding: 10px;
-  min-width: 300px;
   border: 2px solid #999;
   border-radius: 2px;
+  max-width: 400px;
+  @media (min-width: 420px) {
+    min-width: 260px;
+  }
 `
 
 const SubmitButton = styled.input`

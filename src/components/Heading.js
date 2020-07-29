@@ -5,6 +5,7 @@ import styled from '@xstyled/emotion'
 const HeadingContainer = styled.h1`
   font-family: 'Caveat', cursive;
   margin-bottom: 50px;
+  text-align: center;
 `
 
 const Heading = (props) => {

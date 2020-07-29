@@ -24,10 +24,7 @@ const Hero = () => {
         src="/assets/logos/logo-compact.svg"
         alt="High Skill Masters logo"
       />
-      <HeroText>
-        High Skill Masters is a global community for highly skilled
-        professionals in several countries that aimed to be connected worldwide.
-      </HeroText>
+      <HeroText>Global community for highly skilled professionals</HeroText>
     </HeroContainer>
   )
 }

@@ -2,13 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from '@xstyled/emotion'
 
-import { Anchor } from './index'
+import { Anchor, Card } from '../components'
 
-const MemberCardContainer = styled.div`
-  margin: 20px 0;
+const MemberCardContainer = styled(Card)`
+  margin: 10px;
   padding: 20px;
-  background-color: #fff;
-  border-top: 2px solid #27ae60;
   header {
     margin-bottom: 10px;
   }

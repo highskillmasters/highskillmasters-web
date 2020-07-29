@@ -3,13 +3,11 @@ import PropTypes from 'prop-types'
 import styled from '@xstyled/emotion'
 import renderHTML from 'react-render-html'
 
-import { AnchorButton } from '../components'
+import { AnchorButton, Card } from '../components'
 
-const EventCardContainer = styled.div`
+const EventCardContainer = styled(Card)`
   margin: 20px 0;
   padding: 20px;
-  background-color: #fff;
-  border-top: 2px solid #27ae60;
   h4,
   h5,
   h6 {
@@ -33,7 +31,7 @@ const EventCard = ({ event }) => {
         {event.time.timezone})
       </h5>
       <p>
-        <AnchorButton href={event.url}>Join Event</AnchorButton>
+        <AnchorButton href={event.url}>Event Details</AnchorButton>
       </p>
       {renderHTML(event.description)}
     </EventCardContainer>
