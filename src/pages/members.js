@@ -6,10 +6,10 @@ import { Page, MemberCard } from '../components'
 import members from '../data/members.json'
 
 const MemberList = styled.section`
-  display: flex;
-  flex-wrap: wrap;
-  div {
-    flex: 1 1 30%;
+  display: grid;
+  grid-template-columns: 100%;
+  @media (min-width: 460px) {
+    grid-template-columns: 50% 50%;
   }
 `
 

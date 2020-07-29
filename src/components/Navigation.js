@@ -11,7 +11,7 @@ const NavigationContainer = styled.nav`
 const NavigationIcon = styled.div`
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   padding: 10px;
   img {
     width: 30px;

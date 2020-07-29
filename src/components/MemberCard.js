@@ -13,6 +13,8 @@ const MemberCardContainer = styled(Card)`
   h4,
   h5 {
     margin: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
   }
   h5 {
     color: #999;
