@@ -18,7 +18,7 @@ const Anchor = (props) => {
 
 Anchor.propTypes = {
   href: PropTypes.string.isRequired,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.any.isRequired,
 }
 
 export default Anchor
