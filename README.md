@@ -1,4 +1,6 @@
-# highskillmasters-web
+# High Skill Masters Web
+
+<img alt="Preview Homepage" src="./public/assets/images/preview-homepage.png" height="250">
 
 High Skill Masters web application that has:
 
