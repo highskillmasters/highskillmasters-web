@@ -14,6 +14,7 @@ const EventCardContainer = styled(Card)`
     margin: 10px 0;
   }
   h5 {
+    font-size: 1em;
     color: #999;
   }
   p {
@@ -30,10 +31,12 @@ const EventCard = ({ event }) => {
         {event.date} · {event.time.start}–{event.time.end} (
         {event.time.timezone})
       </h5>
-      <p>
-        <AnchorButton href={event.url}>Event Details</AnchorButton>
-      </p>
-      {renderHTML(event.description)}
+      {event.url && (
+        <p>
+          <AnchorButton href={event.url}>See Details</AnchorButton>
+        </p>
+      )}
+      {event.description && <div>{renderHTML(event.description)}</div>}
     </EventCardContainer>
   )
 }

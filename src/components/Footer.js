@@ -49,7 +49,7 @@ const Footer = () => {
       <p>
         <small>
           <Anchor href="https://github.com/highskillmasters">
-            This platform is still in under heavy development
+            This platform is still in under active development
           </Anchor>
         </small>
       </p>

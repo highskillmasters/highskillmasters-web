@@ -38,7 +38,7 @@ const Subscribed = (props) => {
   }, [isLoading, isVerified, email, code])
 
   return (
-    <Page heading={!isVerified ? 'Verify Email Failed' : 'Email Verified'}>
+    <Page heading="Email Verification">
       {isLoading && !isVerified ? (
         <VerifyContainer>
           <p>Verifying your email...</p>
