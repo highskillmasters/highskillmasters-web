@@ -1,6 +1,13 @@
 # highskillmasters-web
 
-High Skill Masters web app.
+High Skill Masters web application that has:
+
+- Homepage
+- About
+- Events
+- Members
+
+For getting started as a developer, read the [CONTRIBUTING](./CONTRIBUTING.md) file.
 
 ## Tech Stack
 
@@ -8,6 +15,8 @@ High Skill Masters web app.
 
 - VS Code
 - Figma
+- JavaScript
+- Node.js
 
 ### Libraries
 
