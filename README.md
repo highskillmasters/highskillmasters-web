@@ -9,6 +9,11 @@ High Skill Masters web application that has:
 - Events
 - Members
 
+Other upcoming features:
+
+- Forum
+- Job Board
+
 For getting started as a developer, read the [CONTRIBUTING](./CONTRIBUTING.md) file.
 
 ## Tech Stack
