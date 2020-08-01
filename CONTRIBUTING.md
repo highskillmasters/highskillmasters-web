@@ -18,7 +18,7 @@ After that you can set the API URL as `localhost`:
 REACT_APP_API_URL=https://localhost:3000
 ```
 
-During development, it is not encourage to use the production API.
+During development, it is not encouraged to use the production API.
 
 ## Run development
 
@@ -27,3 +27,9 @@ yarn dev
 ```
 
 Then it will open `localhost:8000` on your browser automatically.
+
+## Improve components
+
+For now, we're focusing on improving the UI/UX of the whole app and fixing issues.
+
+Do let us know by creating [a new issue](https://github.com/highskillmasters/highskillmasters-web/issues) or sending a [pull request](https://github.com/highskillmasters/highskillmasters-web/pulls).
