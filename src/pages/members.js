@@ -15,7 +15,7 @@ const MemberList = styled.section`
 
 const Members = () => {
   return (
-    <Page heading="Members">
+    <Page heading="HSM Members">
       <MemberList>
         {members.map((member, index) => {
           return <MemberCard key={index} member={member} />

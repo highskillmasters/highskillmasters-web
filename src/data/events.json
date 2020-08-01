@@ -7,8 +7,7 @@
       "end": "16:00",
       "timezone": "GMT+7"
     },
-    "url": "https://www.meetup.com/highskillmasters-malaysia/events/267132392/",
-    "description": "<p>Let's meet to network, discuss, and share our knowledge.</p>"
+    "url": "https://www.meetup.com/highskillmasters-malaysia/events/267132392/"
   },
   {
     "title": "Networking and Sharing: Adapting Your Goals",
@@ -18,8 +17,7 @@
       "end": "17:00",
       "timezone": "GMT+8"
     },
-    "url": "https://www.meetup.com/highskillmasters-malaysia/events/267692780/",
-    "description": "<p>Let's meet to network, discuss, and share our knowledge.</p>"
+    "url": "https://www.meetup.com/highskillmasters-malaysia/events/267692780/"
   },
   {
     "title": "Web Development: Steps to Start Your First Website",
@@ -29,8 +27,7 @@
       "end": "17:00",
       "timezone": "GMT+8"
     },
-    "url": "https://www.meetup.com/highskillmasters-malaysia/events/267883049/",
-    "description": "<p>Let's meet to network, discuss, and share our knowledge.</p>"
+    "url": "https://www.meetup.com/highskillmasters-malaysia/events/267883049/"
   },
   {
     "title": "Web Development: The State of React.js Ecosystem & Frameworks",
@@ -40,7 +37,26 @@
       "end": "17:00",
       "timezone": "GMT+8"
     },
-    "url": "https://www.meetup.com/highskillmasters-malaysia/events/268289230/",
-    "description": "<p>Let's meet to network, discuss, and share our knowledge.</p>"
+    "url": "https://www.meetup.com/highskillmasters-malaysia/events/268289230/"
+  },
+  {
+    "title": "Moving to a New Platform",
+    "date": "7 August 2020",
+    "time": {
+      "start": "10:00",
+      "end": "11:00",
+      "timezone": "GMT+7"
+    },
+    "url": "https://www.meetup.com/highskillmasters-indonesia/events/272292657/"
+  },
+  {
+    "title": "Relaunching High Skill Masters Platform",
+    "date": "9 August 2020",
+    "time": {
+      "start": "14:00",
+      "end": "15:00",
+      "timezone": "GMT+7"
+    },
+    "url": "https://www.meetup.com/highskillmasters-indonesia/events/272292657/"
   }
 ]

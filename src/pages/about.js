@@ -11,9 +11,11 @@ const ProfessionList = styled.ul`
 
 const About = () => {
   return (
-    <Page heading="About Us">
+    <Page heading="About HSM">
       <p>
-        Join our events, gather, and network with like-minded professionals:
+        High Skill Masters (HSM) is a global community for highly skilled
+        professionals. You can join our events and network with like-minded
+        people from various modern professions:
       </p>
       <ProfessionList>
         <li>business owners</li>
@@ -52,7 +54,7 @@ const About = () => {
         <li>investors</li>
         <li>your fancy professions!</li>
       </ProfessionList>
-      <p>Previously we were on Meetup.com groups:</p>
+      <p>Previously we were on Meetup.com groups but now closing down:</p>
       <ul>
         <li>
           <Anchor href="https://meetup.com/highskillmasters-indonesia">
@@ -70,6 +72,11 @@ const About = () => {
           </Anchor>
         </li>
       </ul>
+      <p>
+        We are planning to publish some other things such as forum and job
+        boards.
+      </p>
+      <p>Thank you for reading!</p>
     </Page>
   )
 }

@@ -9,7 +9,7 @@ const EventList = styled.section``
 
 const Events = () => {
   return (
-    <Page heading="Events">
+    <Page heading="HSM Events">
       <EventList>
         {events.reverse().map((event, index) => {
           return <EventCard key={index} event={event} />

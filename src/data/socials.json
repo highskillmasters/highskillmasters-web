@@ -1,5 +1,10 @@
 [
   {
+    "name": "Twitter",
+    "url": "https://twitter.com/hsm_community",
+    "iconUrl": "/assets/icons/twitter.svg"
+  },
+  {
     "name": "Facebook",
     "url": "https://facebook.com/highskillmasters",
     "iconUrl": "/assets/icons/facebook.svg"
@@ -8,12 +13,6 @@
     "name": "Instagram",
     "url": "https://instagram.com/highskillmasters",
     "iconUrl": "/assets/icons/instagram.svg"
-  },
-
-  {
-    "name": "Twitter",
-    "url": "https://twitter.com/hsm_community",
-    "iconUrl": "/assets/icons/twitter.svg"
   },
   {
     "name": "GitHub",
