@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from '@xstyled/emotion'
 import renderHTML from 'react-render-html'
 
-import { AnchorButton, Card } from '../components'
+import { LinkButton, Card } from '../components'
 
 const EventCardContainer = styled(Card)`
   margin: 20px 0;
@@ -31,9 +31,9 @@ const EventCard = ({ event }) => {
         {event.date} · {event.time.start}–{event.time.end} (
         {event.time.timezone})
       </h5>
-      {event.url && (
+      {event.slug && event.isEnabled && (
         <p>
-          <AnchorButton href={event.url}>See Details</AnchorButton>
+          <LinkButton to={`/events/${event.slug}`}>See Details</LinkButton>
         </p>
       )}
       {event.description && <div>{renderHTML(event.description)}</div>}
