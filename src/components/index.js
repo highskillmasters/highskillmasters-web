@@ -10,6 +10,7 @@ import Navigation from './Navigation'
 import Page from './Page'
 import SectionCenter from './SectionCenter'
 import SubscribeForm from './SubscribeForm'
+import LinkButton from './LinkButton'
 
 export {
   Anchor,
@@ -24,4 +25,5 @@ export {
   Page,
   SectionCenter,
   SubscribeForm,
+  LinkButton,
 }
